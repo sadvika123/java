@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+class fibeven
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n,i,sum=0;
+System.out.println("Enter the number:");
+n=sc.nextInt();
+int fib[]=new int[2*n+1];	
+fib[0]=0;
+fib[1]=1;
+for(i=2;i<=2*n;i++)
+{
+fib[i]=fib[i-1]+fib[i-2];
+if(i%2==0)
+sum=sum+fib[i];
+}
+System.out.printf("Even sum of fibonacci series till number %d is %d" , n, sum);
+}
+}
