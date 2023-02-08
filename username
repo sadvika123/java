@@ -12,13 +12,13 @@ System.out.println("Enter the username:");
 a=sc.nextLine();
 System.out.println("Re-Enter the username:");
 b=sc.nextLine();
-if(a==b)
+if(a.equals(b))
 {
-System.out.println("valid username");
+System.out.print("valid username");
 }
 else
 {
-System.out.println(" invalid username");
+System.out.print("invalid username");
 }
 }
 catch(Exception e)
