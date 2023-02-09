@@ -34,8 +34,8 @@ System.out.println("Sum of the matrices:");
 for(i=0;i<row;i++)
 {
 for(j=0;j<col;j++)
-System.out.println(add[i][j]+ "\t");
-System.out.println("\n");
+System.out.print(add[i][j]+ "\t");
+System.out.println();
 }
 }
 }
