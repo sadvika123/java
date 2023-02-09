@@ -1,0 +1,41 @@
+import java.util.*;
+import java.io.*;
+class simpleInterest
+{
+public static void main(String args[])
+{
+try
+{
+Scanner sc=new Scanner(System.in);
+int amt,year;
+double interest=0;
+char sen_cit;
+System.out.println("Enter the amount:");
+amt=sc.nextInt();
+System.out.println("Enter no.of years:");
+year=sc.nextInt();
+if(year<0||amt<0)
+throw new Exception();
+System.out.println("Is customer senior citizen(y/n):");
+sen_cit=sc.next().charAt(0);
+if(sen_cit=='y'||sen_cit=='Y')
+{
+interest=(amt*year*12)/100;
+System.out.println(interest);
+}
+else if(sen_cit=='n'||sen_cit=='N')
+{
+interest=(amt*year*10)/100;
+System.out.println(interest);
+}
+else
+System.out.println("Enter the valid input of senior citizen:");
+}
+catch(Exception e)
+{
+System.out.println("enter valid input");
+}
+}
+}
+
+
