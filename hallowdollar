@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+class hallowdollar
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int i,j,rows,col;
+System.out.println("Enter no.of rows and col:");
+rows=sc.nextInt();
+col=sc.nextInt();
+for(i=1;i<=rows;i++)
+{
+for(j=1;j<=col;j++)
+if(i==1 ||i==rows ||j==1 ||j==col)
+System.out.print("$");
+else
+System.out.print(" ");
+System.out.println();
+}
+}
+}
+
+
+
