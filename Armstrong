@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+class armstrong
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number");
+        int num=sc.nextInt();
+        int orgnum=num;
+        int rem,sum=0;
+        while(orgnum!=0)
+        {
+            rem=orgnum%10;
+            sum+=Math.pow(rem,3);
+            orgnum/=10;
+        }
+        System.out.println(sum);
+        if(sum==num)
+        {
+            System.out.println("armstrong");
+        }
+        else{
+            System.out.println("not armstrong");
+        }
+    }
+}
