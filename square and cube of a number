@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+class sqrandcube
+{
+public static void main(String args[])
+{
+try
+{
+Scanner sc=new Scanner(System.in);
+float num;
+System.out.println("Enter the number:");
+num=sc.nextFloat();
+System.out.println("Square of the number is:"+Math.pow(num,2));
+System.out.println("cube of the number is:"+Math.pow(num,3));
+}
+catch(Exception e)
+{
+System.out.println("Invalid input");
+}
+}
+}
+
+
+
