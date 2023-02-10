@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+class oddnumber
+{
+public static void main(String args[])
+{
+try
+{
+Scanner sc=new Scanner(System.in);
+int num,nthOddNumber;
+System.out.println("Enter the number:");
+num=sc.nextInt();
+nthOddNumber = (2 * num) - 1;
+System.out.println("The odd number is: " +nthOddNumber);
+}
+catch(Exception e)
+{
+System.out.println("Invalid input");
+}
+}
+}
