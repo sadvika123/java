@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+class vowandcon
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+String word, s1=" ",s2=" ";
+char ch;
+System.out.println("enter the word");
+word=sc.nextLine();
+for(int i=0;i<word.length();i++)
+{
+ch=word.charAt(i);
+if(ch=='a'||ch=='A'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch=='U')
+{
+  s1 = s1 + String.valueOf(ch) + " ";
+}
+else
+{
+s2 = s2 + String.valueOf(ch) + " ";
+}
+}
+System.out.println("vowels are" + s1);
+System.out.println("consonants are" + s2);
+}
+}
